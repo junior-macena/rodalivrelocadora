@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0px;
+}
+
+ul {
+    padding: 0px !important;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.menu-principal {
+    width: 100%;
+    background-color: #4682B4;
+    height: 60px;
+}
+
+main,
+.content {
+    margin: 0 auto;
+    width: 980px;
+    position: relative;
+}
+
+.logo {
+    float: left;
+    padding: 13px;
+    width: 90%;
+}
+
+.redes-sociais ul li {
+    margin-left: 15px;
+    float: left;
+    list-style: none;
+    height: 60px;
+    margin-top: 5px;
+}
+
+.header-2 {
+    background-color: #ffffff;
+    width: 1500px;
+    margin: 18px auto;
+    padding: 12px;
+}
+
+.menu-urls {
+    border-bottom: 3px solid #efefef;
+    height: 80px;
+}
+
+.menu ul li {
+    display: inline-block;
+    color: #8b8b8b;
+    margin-left: 13px;
+}
+
+.menu ul li a {
+    color: #8b8b8b;
+    text-decoration: none;
+    font-size: 23.5px;
+
+}
+
+.menu ul li:nth-last-child(-n+2) {
+    float: right;
+    margin-left: -40px;
+    width: 11rem;
+}
+
+
+.menu {
+    width: 70%;
+    float: right;
+}
+
+.busca {
+    text-align: left;
+    width: 30%;
+    float: left;
+}
+
+.busca input {
+    background-image: url('../img/icone-search.png');
+    background-repeat: no-repeat;
+    background-position: 96%;
+    height: 10px;
+    padding: 8px;
+    width: 300px;
+    margin-top: -1px;
+    border: 1px solid #d6d6d6;
+}
+
+.col-100 {
+    width: 100%;
+    float: left;
+    position: relative;
+}
+
+
+button.slick-prev {
+    font-size: 0px;
+    border: none;
+    width: 25px;
+    height: 51px;
+    position: absolute;
+    z-index: 9;
+    background-color: transparent;
+    background-image: url('../img/anterior.png');
+    top: 37%;
+    left: 2%;
+}
+
+button.slick-next {
+    font-size: 0px;
+    border: none;
+    width: 25px;
+    height: 51px;
+    position: absolute;
+    z-index: 9;
+    background-color: transparent;
+    background-image: url('../img/proximo.png');
+    top: 37%;
+    right: 2%;
+}
+
+.slider-principal {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider-principal img {
+    width: 100%;
+    height: auto;
+}
+
+.slick-dots li button {
+    font-size: 0px;
+    border: 5px solid #ffffff;
+    width: 22px;
+    height: 22px;
+    background: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slick-dots {
+    margin: 0 auto;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 93%;
+}
+
+li.slick-active button {
+    background: #4682B4;
+}
+
+.slick-dots li {
+    padding-left: 10px;
+    display: inline-block;
+}
+
+/*Estilização da frase na tela principal*/
+.texto-destaque {
+    text-align: center;
+}
+
+.texto-destaque strong {
+    color: #646464;
+}
+
+.texto-destaque h1 {
+    color: #818181;
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+.texto-destaque p {
+    color: #9a9a9a;
+    font-size: 20px;
+    padding-top: 25px;
+}
