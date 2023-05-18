@@ -1,3 +1,8 @@
+<?php 
+if (!isset($_SESSION)) {
+   session_start();
+}
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -20,7 +25,8 @@
                 </div>
                 <div class="redes-sociais">
                     <ul>
-                        <li><a href="https://www.instagram.com/juuniorcs/" target="_blank"><img src="./img/instagram.png"></a></li>
+                        <li><a href="https://www.instagram.com/juuniorcs/" target="_blank"><img
+                                    src="./img/instagram.png"></a></li>
                     </ul>
                 </div>
             </div>
@@ -34,7 +40,7 @@
                     <li><a href="">Carros</a></li>
                     <li><a href="">Minhas reservas</a></li>
                     <li><a href="">Registrar-se</a></li>
-                    <li><a href="">Login</a></li>
+                    <li><a href="login.php">Login</a></li>
                 </ul>
             </div>
             <div class="busca">
