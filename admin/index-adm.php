@@ -1,30 +1,14 @@
 <?php require('protectadmin.php'); ?>
 
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina </title>
+</head>
 <body>
-
-    <form id="form_curso" name="form_curso" method="post" action="salvar.php" class="form_curso">
-
-        <div>
-            <h1>CADASTRAR CURSO</h1>
-        </div>
-
-        <div class="agrupamento_curso">
-
-            <div>
-                <div><label>Nome do curso</label></div>
-
-                <div><input type="text" id="nome_curso" name="nome_curso" required autofocus></div>
-
-            </div>
-
-
-        </div>
-
-        <div><input type="submit" id="btn_entrar" name="btn_entrar" value="Salvar"></div>
-
-    </form>
-    <a href="../logout.php">Sair</a>
-
+    
 </body>
+</html>

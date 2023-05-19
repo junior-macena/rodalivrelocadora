@@ -1,6 +1,6 @@
-<?php 
+<?php
 if (!isset($_SESSION)) {
-   session_start();
+    session_start();
 }
 ?>
 <!DOCTYPE html>
@@ -39,7 +39,7 @@ if (!isset($_SESSION)) {
                     <li><a href="">Home</a></li>
                     <li><a href="">Carros</a></li>
                     <li><a href="">Minhas reservas</a></li>
-                    <li><a href="">Registrar-se</a></li>
+                    <li><a href="registrar.php">Registrar-se</a></li>
                     <li><a href="login.php">Login</a></li>
                 </ul>
             </div>

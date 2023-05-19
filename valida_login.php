@@ -31,7 +31,7 @@ if (isset($_POST['email_user']) || isset($_POST['senha_user'])) {
 
             echo "<script> alert('Administrador [LOGADO]');</script>";
             /*echo "<script> window.location.href='$url_admin';</script>";*/
-            header("Location: index.php");
+            header("Location: admin/index-adm.php");
 
         } else {
 
