@@ -1,0 +1,214 @@
+*{
+
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #666;
+}
+
+html{
+
+	font-size: 70%;
+
+}
+
+/* CSS ADMIN */
+/* MENU */ 
+
+
+.barra_topo{
+
+	display:flex;
+	flex-direction:column;
+
+
+}
+
+.barra_topo_n1{
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;	
+	align-items: center;
+	padding: 1rem;
+
+}
+
+.barra_topo_n1 > img{
+	
+	width: 100px;
+
+}
+
+
+.barra_topo_n2{
+
+	padding: 0.5rem;
+	background:  #4682B4;
+
+}
+
+.menu_admin{
+
+	list-style:none;
+	float:left;
+	width: 100%;
+
+}
+
+.menu_admin li{
+
+	position: relative;
+	float:left;
+	border-right: 1px solid #FFF;
+	font-size: 1.2rem;
+	width: 10%;
+	text-align: center;
+
+
+}
+
+.menu_admin li a{
+
+	color:#FFF; 
+	text-decoration:none; 
+	padding: 1rem 1rem; 
+	display:block;
+
+}
+
+.menu_admin li a:hover{
+
+	background: #00BFFF;
+	color: #FFF;
+	font-weight: 600;
+
+}
+
+
+.menu_admin li  ul{
+	
+	position:absolute;
+	top:35px;
+	left:0;
+	background: #4682B4;
+	display:none;
+	
+}
+
+.menu_admin li:hover ul, .menu li.over ul{
+	
+	display:block;
+
+}
+
+.menu_admin li ul li{
+	
+	border-bottom:1px solid #FFF;
+	display:block;
+	width: 200px;
+	text-align: left;
+}
+
+/* FIM CSS MENU ADMIN*/
+
+/* Estilizacao Editar, exibir, cadastrar */
+
+.form_veiculo{
+
+	width: 800px;
+	margin: 4rem auto;
+
+}
+
+.form_veiculo > div > h1{
+
+	font-size: 2rem;
+
+}
+
+.form_veiculo > div > input[type="submit"]{
+
+	width: 150px;
+
+}
+
+
+.estilo_tabela{
+
+	width: 1000px;
+	margin: 4rem auto;
+
+}
+
+.estilo_tabela > div > h1{
+
+	font-size: 2rem;
+
+}
+
+table{
+
+	width: 100%;
+
+}
+
+.tabela_cabecalho{
+
+	font-weight: 600;
+	height: 5rem;
+}
+
+td{
+
+	font-size: 1.4rem;
+	border-bottom: 1px solid #069;
+	text-align: center;
+	
+
+	
+}
+
+.agrupamento_veiculo{
+
+	display:flex;
+	flex-direction: column;
+	justify-content: left;
+	align-items: left;
+	
+	border: 1px solid #069;
+	padding: 5rem;
+	border-radius: 8px;
+
+
+}
+
+.agrupamento_exibir_veiculo{
+	
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;	
+	align-items: center;
+	
+	border: 1px solid #069;
+	padding: 5rem;
+	border-radius: 8px;
+}
+
+.agrupamento_botao_acao{
+	
+	display:flex;
+	flex-direction: colum;
+	justify-content: space-between;	
+	align-items: center;
+}
+
+.botao_acao{
+	
+	width: 35px;
+	cursor:pointer;
+	margin-top: 0.2rem;
+	margin-bottom: 0.2rem;
+	
+
+}
