@@ -8,8 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina ADM </title>
-    	<!-- ARQUIVO DE ESTILOS DO PORTAL -->
-	<link rel="stylesheet" type="text/css" href="http://localhost/rodalivre2023/admin/admin.css">
+    <!-- ARQUIVO DE ESTILOS DO PORTAL -->
+    <link rel="stylesheet" type="text/css" href="http://localhost/rodalivre2023/admin/admin.css">
     <script>
 
         function confirmar_exclusao(cod_veiculo) {
@@ -52,7 +52,7 @@
 
                     </li>
 
-                    <li><a href="http://localhost/rodalivre2023/logout.php">SAIR</a></li>
+                    <li class="adm-sair" ><a href="http://localhost/rodalivre2023/logout.php">SAIR</a></li>
 
                 </ul>
 

@@ -7,7 +7,7 @@
 }
 
 html{
-
+	
 	font-size: 70%;
 
 }
@@ -85,7 +85,6 @@ html{
 
 }
 
-
 .menu_admin li  ul{
 	
 	position:absolute;
@@ -113,6 +112,78 @@ html{
 /* FIM CSS MENU ADMIN*/
 
 /* Estilizacao Editar, exibir, cadastrar */
+.html_cad_veiculo{
+	background-color:#FFFAFA;
+}
+
+.form_cadastrar{
+    background-color: #DCDCDC;
+    width: 400px;
+	height: 670px;
+    text-align:center;
+    padding: 25px 20px;
+    border-radius: 10px;
+	margin-left: auto; /* Centraliza horizontalmente */
+	margin-right: auto; /* Centraliza horizontalmente */
+	margin-top: 7%;
+	
+}
+.agrupamento_cadastrar{
+	padding-top: 15px;
+}
+.label{
+	text-align:center;
+	font-size: 16px;
+	margin-bottom: 1px;
+	font-weight: bold;
+
+}
+.form_cadastrar:hover{
+    transition: 0.5s;
+    box-shadow: 1px 1px 40px rgba(196, 196, 196, 0.527);
+}
+
+.agrupamento_cadastrar input{
+    width: 70%;
+    padding: 7px;
+    margin: 8px 0;
+    outline: none;
+	border: 2px solid #858585; 
+	border-radius: 5px; /* Borda arredondada com raio de 5 pixels */
+	background-color: Snow;
+}
+
+.agrupamento_cadastrar input::placeholder{
+    font-size: 15px;
+}
+
+#descricao{
+	width: 300px; 
+	height: 200px;
+	resize: none;
+	font-size: 16px;
+	border: 2px solid #858585; 
+	border-radius: 5px; /* Borda arredondada com raio de 5 pixels */
+	background-color: Snow;
+}
+
+#btn_entrarvei{
+    width: 50%;
+    padding: 8px 0;
+    margin: 12px 0;
+    background-color: #47a1e9;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+#btn_entrarvei:hover{
+    background-color: #298bdb;
+}
+
+
+/**/
 
 .form_veiculo{
 

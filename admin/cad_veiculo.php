@@ -1,30 +1,34 @@
 <?php require('index-adm.php'); ?>
+<html class="html_cad_veiculo">
 
-<form id="form_veiculo" name="form_veiculo" method="post" action="salvar.php" class="form_veiculo">
-
-    <div>
-        <h1>CADASTRAR CARRO</h1>
-    </div>
-
-    <div class="agrupamento_veiculo">
+<body>
+    <form id="form_cadastrar" name="form_cadastrar" class="form_cadastrar" method="post" action="salvar.php">
 
         <div>
-            <h1>REGISTRAR</h1>
-
-            <div><label>Ano do veículo</label></div>	
-            <input type="number" name="ano_veiculo" id="ano_veiculo" min="1900" max="2099" step="1" required><br>
-            <div><label>Descrição do veículo</label></div>	
-            <input type="text" name="descricao" id="descricao" required><br>
-            <div><label>Marca</label></div>	
-            <input type="text" name="marca" id="marca" required><br>
-            <div><label>Modelo</label></div>	
-            <input type="text" name="modelo" id="modelo" required><br>
-
+            <h1>CADASTRAR CARRO</h1><br><br><br>
         </div>
 
-        <div><input type="submit" id="btn_entrar" name="btn_entrar" value="Salvar"></div>
+        <div class="agrupamento_cadastrar">
 
-</form>
+            <div>
+                <div class="label"><label>Ano do veículo</label> </div>
+                <div><input type="number" id="ano_veiculo" name="ano_veiculo" min="1900" max="2099" step="1" required
+                        placeholder="Ano"><br> </div><br>
+
+                <div class="label"><label>Descrição do veículo</label></div><br>
+                <textarea name="descricao" id="descricao" cols="30" rows="10" required></textarea><br><br>
+
+                <div class="label"><label>Marca</label></div>
+                <div><input type="text" name="marca" id="marca" required placeholder="Marca"></div><br>
+
+                <div class="label"><label>Modelo</label></div>
+                <div><input type="text" name="modelo" id="modelo" required placeholder="Modelo"></div><br><br>
+
+                <div><input type="submit" id="btn_entrarvei" name="btn_entrarvei" value="Entrar"></div>
+
+            </div>
+        </div>
+    </form>
 
 </body>
 
