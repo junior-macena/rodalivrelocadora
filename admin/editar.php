@@ -15,7 +15,7 @@ if (mysqli_num_rows($select_veiculo) > 0) {
 }
 ?>
 
-<form id="form_veiculo" name="form_veiculo" method="post" action="salvar.php" class="form_veiculo">
+<form id="form_veiculo" name="form_veiculo" method="post" action="salvar.php" class="form_veiculo" enctype="multipart/form-data">
     <div>
         <h1>ATUALIZAR VEÍCULO</h1>
     </div>
@@ -63,11 +63,29 @@ if (mysqli_num_rows($select_veiculo) > 0) {
                 <input type="text" id="modelo" name="modelo" value="<?php echo $dados_veiculo['modelo']; ?>" required>
             </div>
         </div>
+        <div>
+            <div>
+                <label>Preço</label>
+            </div>
+            <div>
+                <input type="text" id="preco_veiculo" name="preco_veiculo" value="<?php echo $dados_veiculo['preco_veiculo']; ?>" required>
+            </div>
+        </div>
+        <div>
+            <div>
+                <label>Imagem do veículo</label>
+            </div>
+            <div>
+                <input type="file" id="img_veiculo" name="img_veiculo" value="<?php echo $dados_veiculo['img_veiculo']; ?>" required>
+            </div>
+        </div>
     </div>
     <div>
         <input type="submit" id="btn_entrar" name="btn_entrar" value="Salvar">
     </div>
 </form>
+
+<script type="text/javascript" src="http://localhost/rodalivre2023/js/main.js"></script>
 </body>
 
 </html>

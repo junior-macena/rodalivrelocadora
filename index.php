@@ -17,37 +17,7 @@ if (!isset($_SESSION)) {
 </head>
 
 <body>
-    <header class="menu-principal">
-        <main>
-            <div class="header-1">
-                <div class="logo">
-                    <img src="./img/logo.png" />
-                </div>
-                <div class="redes-sociais">
-                    <ul>
-                        <li><a href="https://www.instagram.com/juuniorcs/" target="_blank"><img
-                                    src="./img/instagram.png"></a></li>
-                    </ul>
-                </div>
-            </div>
-        </main>
-    </header>
-    <main class="col-100 menu-urls">
-        <div class="header-2">
-            <div class="menu">
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Carros</a></li>
-                    <li><a href="">Minhas reservas</a></li>
-                    <li><a href="registrar.php">Registrar-se</a></li>
-                    <li><a href="login.php">Login</a></li>
-                </ul>
-            </div>
-            <div class="busca">
-                <input placeholder="Pesquisar" type="text" />
-            </div>
-        </div>
-    </main>
+    <?php require('templates/header.php'); ?>
     <div class="col-100">
         <div class="slider-principal">
             <div><img src="./img/aluguel-slider-principal.png" /></div>
@@ -79,72 +49,7 @@ if (!isset($_SESSION)) {
             </div>
         </div>
     </div>
-    <div class="col-100 bloco-imagens-texto">
-        <div class="content" style="margin-left: 24%; float: left;">
-            <div class="col-3 bloco-texto bloco-imagem">
-                <img src="./img/carros/chevrolet_spin-2020-2021.png">
-                <p><b>Chevrolet SPIN</b></p>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting of the
-                    industry. Lorem
-                    Ipsum has been
-                    the and scrambled it.
-                    atype specimen
-                </p>
-            </div>
-            <div class="col-3 bloco-texto bloco-imagem">
-                <img src="./img/carros/fiat-fiorino.png">
-                <p><b>Fiat FIORINO</b></p>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting of the
-                    industry. Lorem
-                    Ipsum has been
-                    the and scrambled it.
-                    atype specimen
-                </p>
-            </div>
-            <div class="col-3 bloco-texto bloco-imagem">
-                <img src="./img/carros/fiat-toro.png">
-                <p><b>Fiat TORO</b></p>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting of the
-                    industry. Lorem
-                    Ipsum has been
-                    the and scrambled it.
-                    atype specimen
-                </p>
-            </div>
-        </div>
-        <div class="content" style="margin-left: 24%; float: left;">
-            <div class="col-3 bloco-texto bloco-imagem">
-                <img src="./img/carros/hyundai_hb20.png">
-                <p><b>Hyundai HB20</b></p>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting of the
-                    industry. Lorem
-                    Ipsum has been
-                    the and scrambled it.
-                    atype specimen
-                </p>
-            </div>
-            <div class="col-3 bloco-texto bloco-imagem">
-                <img src="./img/carros/peugeot-2008.png">
-                <p><b>Peugeot 2008</b></p>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting of the
-                    industry. Lorem
-                    Ipsum has been
-                    the and scrambled it.
-                    atype specimen
-                </p>
-            </div>
-            <div class="col-3 bloco-texto bloco-imagem">
-                <img src="./img/carros/renault_sandero.png">
-                <p><b>Reanult SANDEIRO</b></p>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting of the
-                    industry. Lorem
-                    Ipsum has been
-                    the and scrambled it.
-                    atype specimen
-                </p>
-            </div>
-        </div>
-    </div>
+    <?php include('carros.php'); ?>
     <footer>
         <div class="footer-bottom">
             <a href="https://www.instagram.com/juuniorcs/" target="_blank">
@@ -155,7 +60,7 @@ if (!isset($_SESSION)) {
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script type="text/javascript" src="./js/main.js"></script>
+    <script type="text/javascript" src="http://localhost/rodalivre2023/js/main.js"></script>
 </body>
 
 </html>
