@@ -47,7 +47,7 @@ $select_veiculo = mysqli_query($mysqli, "SELECT * FROM veiculo ORDER BY cod_veic
                         </p>
                     </div>
                     <div class="botao-comprar">
-                        <a href="#" class="btn-comprar">Alugar</a>
+                        <a href="#" class="btn-comprar">Comprar</a>
                     </div>
                 </div>
                 <?php

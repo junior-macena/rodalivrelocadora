@@ -188,7 +188,7 @@ li.slick-active button {
 }
 
 /*modificando a class col-3*/
-.col-3{
+.col-3 {
     padding-left: 19px;
     padding-right: 15px;
     width: 29%;
@@ -196,77 +196,111 @@ li.slick-active button {
     position: relative;
 }
 
-.bloco-texto{
+.bloco-texto {
     margin-top: 4em;
     text-align: center;
 }
 
-h3{
+h3 {
     font-weight: normal !important;
     color: #4d4d4d;
 }
 
 /*CSS dos blocos de carros na pagina principal*/
-.bloco-imagem img {
-    margin: 0 auto;
-    width: 95%;
-    height: auto;
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 100%;
 }
 
 .bloco-imagem {
-    height: 300px;
-    border: 2px solid #c5c5c5;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin-left: 4px;
-    background-color: rgb(134, 139, 145);
-    cursor: pointer;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    flex: 0 0 calc(33.33% - 20px);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.bloco-imagem:hover{
-    margin-top: 15px !important;
-
+.bloco-imagem:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.bloco-imagem b, p{
-    text-align: left;
-    padding-top: 20px;
-    
+.bloco-imagem img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
 }
 
-.bloco-texto {
-    margin-top: 3em;
+.bloco-imagem h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 
-.bloco-imagens-texto{
-    background-color: #eeeeee;
+.bloco-imagem h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #888888;
 }
 
-.bloco-imagens-texto:before{
-    content: " ";
-    width: 100%;
-    height: 52px;
+.preco {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.botao-comprar {
+    margin-top: auto;
+}
+
+.btn-comprar {
     display: inline-block;
-    background: #ffffff;
-    background-image: url('../img/setinha.png');
-    background-repeat: no-repeat;
-    background-position: center;
+    background-color: #007bff;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
 }
+
+.btn-comprar:hover {
+    background-color: #0056b3;
+}
+
+
 
 /*estilizando o footer*/
-.footer-bottom{
+.footer-bottom {
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 50px; /* altura do footer */
+    height: 50px;
+    /* altura do footer */
     background-color: #4682B4;
-    
+
 }
-.footer-bottom a{
+
+.footer-bottom a {
     padding-top: 10px;
     color: #eeeeee;
     text-decoration: none;
 }
-.footer-bottom p{
+
+.footer-bottom p {
     text-align: center;
 }
