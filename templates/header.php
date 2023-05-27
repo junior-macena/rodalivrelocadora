@@ -1,3 +1,9 @@
+<?php
+if (!isset($_SESSION)) {
+    session_start();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -13,36 +19,54 @@
 
 <body>
     <header class="menu-principal">
-        <main>
-            <div class="header-1">
-                <div class="logo">
-                    <img src="http://localhost/rodalivre2023/img/logo.png" />
+        <div class="header-1">
+            <div class="logo">
+                <img src="http://localhost/rodalivre2023/img/logo.png" alt="Roda Livre">
+            </div>
+            <div class="nav-buttons">
+                <div class="button-log">
+                    <?php if (isset($_SESSION['email_user'])): ?>
+                        <div class="nav-logout">
+                            <a href="http://localhost/rodalivre2023/logout.php">Logout</a>
+                        </div>
+                    <?php else: ?>
+                        <div class="nav-login">
+                            <a href="http://localhost/rodalivre2023/login.php">Login</a>
+                        </div>
+                        <div class="nav-registrar">
+                            <a href="http://localhost/rodalivre2023/registrar.php">Registrar-se</a>
+                        </div>
+                    <?php endif; ?>
                 </div>
-                <div class="redes-sociais">
+            </div>
+            <div class="redes-sociais">
+                <ul>
+                    <li>
+                        <a href="https://www.instagram.com/juuniorcs/" target="_blank">
+                            <img src="http://localhost/rodalivre2023/img/instagram.png" alt="Instagram">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <main class="col-100 menu-urls">
+            <div class="header-2">
+                <div class="menu">
                     <ul>
-                        <li><a href="https://www.instagram.com/juuniorcs/" target="_blank"><img
-                                    src="http://localhost/rodalivre2023/img/instagram.png"></a></li>
+                        <li class="nav-home"><a href="http://localhost/rodalivre2023/">Home</a></li>
+                        <li class="nav-carros"><a href="http://localhost/rodalivre2023/carros.php">Carros</a></li>
+                        <li class="nav-reservas"><a href="http://localhost/rodalivre2023/minhasreservas.php">Minhas
+                                reservas</a></li>
                     </ul>
+                </div>
+                <div class="busca">
+                    <input id="pesquisarInput" placeholder="Pesquisar" type="text">
                 </div>
             </div>
         </main>
     </header>
-    <main class="col-100 menu-urls">
-        <div class="header-2">
-            <div class="menu">
-                <ul>
-                    <li><a href="http://localhost/rodalivre2023/">Home</a></li>
-                    <li><a href="http://localhost/rodalivre2023/carros.php">Carros</a></li>
-                    <li><a href="http://localhost/rodalivre2023/minhasreservas.php">Minhas reservas</a></li>
-                    <li><a href="http://localhost/rodalivre2023/registrar.php">Registrar-se</a></li>
-                    <li><a href="http://localhost/rodalivre2023/login.php">Login</a></li>
-                </ul>
-            </div>
-            <div class="busca">
-                <input placeholder="Pesquisar" type="text" />
-            </div>
-        </div>
-    </main>
+
+    <script type="text/javascript" src="http://localhost/rodalivre2023/js/main.js"></script>
 </body>
 
 </html>

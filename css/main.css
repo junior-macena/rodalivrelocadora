@@ -1,97 +1,149 @@
 * {
     margin: 0;
-    padding: 0px;
-}
-
-ul {
-    padding: 0px !important;
+    padding: 0;
+    
 }
 
 body {
     width: 100%;
     height: 100%;
     margin: 0 auto;
+    overflow-x: hidden;
 }
 
+
+/* Definir estilos para o header principal */
 .menu-principal {
+    padding: 10px;
     width: 100%;
     background-color: #4682B4;
     height: 60px;
 }
+
+
+/* Estilos para o primeiro bloco do header */
+.header-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Estilos para o logotipo */
+.logo img {
+    width: 100px;
+    height: auto;
+    padding: 10px;
+}
+
+/* Estilos para os botões de navegação */
+.nav-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.button-log{
+    position: absolute;
+    right: 80px;
+    top: 0;
+}
+
+/* Estilos para o botão de logout */
+.nav-logout a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+/* Estilos para os botões de login e registrar-se */
+.nav-login a,
+.nav-registrar a {
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+    margin-left: auto;
+    float: right;
+}
+
+/* Estilos para as redes sociais */
+.redes-sociais ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.redes-sociais li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.redes-sociais img {
+    width: 45px;
+    float: right;
+    height: auto;
+}
+
+/* Estilos para a barra de navegação */
+.menu-urls {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color: #f2f2f2;
+    width: 100vw; /* Largura definida em relação à largura da janela */
+    margin-left: -20px; /* Remove o espaço em branco no lado esquerdo */
+}
+
+.menu {
+    margin-right: 20px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #90b2b8;
+}
+
+.busca input {
+    margin-right: 20px;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.header-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/* menu-principal */
 
 main,
 .content {
     margin: 0 auto;
     width: 980px;
     position: relative;
-}
-
-.logo {
-    float: left;
-    padding: 13px;
-    width: 90%;
-}
-
-.redes-sociais ul li {
-    margin-left: 15px;
-    float: left;
-    list-style: none;
-    height: 60px;
-    margin-top: 5px;
-}
-
-.header-2 {
-    background-color: #ffffff;
-    width: 1500px;
-    margin: 18px auto;
-    padding: 12px;
-}
-
-.menu-urls {
-    border-bottom: 3px solid #efefef;
-    height: 80px;
-}
-
-.menu ul li {
-    display: inline-block;
-    color: #8b8b8b;
-    margin-left: 13px;
-}
-
-.menu ul li a {
-    color: #8b8b8b;
-    text-decoration: none;
-    font-size: 23.5px;
-
-}
-
-.menu ul li:nth-last-child(-n+2) {
-    float: right;
-    margin-left: -40px;
-    width: 11rem;
-}
-
-
-.menu {
-    width: 70%;
-    float: right;
-}
-
-.busca {
-    text-align: left;
-    width: 30%;
-    float: left;
-}
-
-.busca input {
-    background-image: url('../img/icone-search.png');
-    background-repeat: no-repeat;
-    background-position: 96%;
-    height: 10px;
-    padding: 8px;
-    width: 300px;
-    margin-top: -1px;
-    border: 1px solid #d6d6d6;
 }
 
 .col-100 {
@@ -177,6 +229,7 @@ li.slick-active button {
     color: #818181;
     font-size: 30px;
     padding-top: 30px;
+    padding-left: 110px;
     font-weight: normal;
 }
 

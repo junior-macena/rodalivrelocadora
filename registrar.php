@@ -61,20 +61,40 @@ include_once 'conexao.php';
     }
 
     ?>
-    <form method="POST" class="form_login" action="">
+    <form id="form_registro" name="form_registro" class="form_registro" method="post" action=" ">
 
-        <h1>REGISTRAR</h1>
-        <input type="text" name="nome_user" placeholder="Primeiro nome" required><br>
+        <div>
+            <h1>Cadastro</h1>
+        </div>
 
-        <input type="number" name="cpf_user" placeholder="CPF" required><br>
+        <div class="agrupamento_registro">
 
-        <input type="email" name="email_user" placeholder="E-mail" required autofocus><br>
+            <div>
+                <input type="text" name="nome_user" placeholder="Primeiro nome" required><br>
+                
+                <input type="number" name="cpf_user" placeholder="CPF" required><br>
 
-        <input type="password" name="senha_user" placeholder="Crie uma senha" required><br>
-        <input type="password" name="senha_user" placeholder="Confirme a senha" required><br><br>
+                <input type="email" name="email_user" placeholder="E-mail" required autofocus><br>
 
-        <input type="submit" name="SendCadUser" value="Cadastrar"><br>
+                <input type="password" name="senha_user" placeholder="Crie uma senha" required><br>
+                
+                <input type="password" name="senha_user" placeholder="Confirme a senha" required><br><br>
+
+                <div><input type="submit" id="SendCadUser" name="SendCadUser" value="Cadastrar"></div>
+                <p class="tem-cadastro">
+                    Tem cadastro?
+                    <a href="login.php">Login</a>
+                </p>
+
+            </div>
+
+            <div>
+                <br><img src="img/logo.png" class="logo_login">
+            </div>
+        </div>
+
     </form>
+
 </body>
 
 </html>

@@ -20,12 +20,14 @@
 
             <div>
 
-                <div><br><input type="text" id="email_user" name="email_user" required autofocus placeholder="E-Mail"><br> </div>
+                <div><br><input type="text" id="email_user" name="email_user" required autofocus
+                        placeholder="E-Mail"><br> </div>
 
-                <div><input type="password" id="senha_user" name="senha_user" placeholder="Senha" required><br><br></div>
+                <div><input type="password" id="senha_user" name="senha_user" placeholder="Senha" required><br><br>
+                </div>
 
                 <div><input type="submit" id="btn_entrar" name="btn_entrar" value="Entrar"></div>
-                <p class="sem-cadastro" >
+                <p class="sem-cadastro">
                     Não tem cadastro?
                     <a href="registrar.php">Registre-se</a>
                 </p>
@@ -33,12 +35,8 @@
             </div>
 
             <div>
-
                 <br><img src="img/logo.png" class="logo_login">
-
             </div>
-
-
         </div>
 
     </form>

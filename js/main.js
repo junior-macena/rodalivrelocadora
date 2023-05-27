@@ -1,16 +1,16 @@
 $('.slider-principal').slick({
-    dots: true,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 1,
-    adaptiveHeight: true,
-    autoplay: true,
-    autoplaySpeed: 7000
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  adaptiveHeight: true,
+  autoplay: true,
+  autoplaySpeed: 7000
 });
 
 window.addEventListener('beforeunload', function (event) {
-    event.preventDefault();
-    window.scrollTo(0, 0);
+  event.preventDefault();
+  window.scrollTo(0, 0);
 });
 
 
