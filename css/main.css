@@ -1,10 +1,11 @@
 * {
     margin: 0;
     padding: 0;
-    
+
 }
 
 body {
+    font-family: Arial, sans-serif;
     width: 100%;
     height: 100%;
     margin: 0 auto;
@@ -42,7 +43,7 @@ body {
     flex-direction: column;
 }
 
-.button-log{
+.button-log {
     position: absolute;
     right: 80px;
     top: 0;
@@ -79,7 +80,7 @@ body {
 
 .redes-sociais img {
     width: 45px;
-    float: right;
+    float: left;
     height: auto;
 }
 
@@ -90,8 +91,10 @@ body {
     align-items: center;
     padding: 10px;
     background-color: #f2f2f2;
-    width: 100vw; /* Largura definida em relação à largura da janela */
-    margin-left: -20px; /* Remove o espaço em branco no lado esquerdo */
+    width: 100vw;
+    /* Largura definida em relação à largura da janela */
+    margin-left: -20px;
+    /* Remove o espaço em branco no lado esquerdo */
 }
 
 .menu {
@@ -113,17 +116,19 @@ li {
 a {
     text-decoration: none;
     color: #333;
-    padding: 8px 12px;
-    border-radius: 8px;
+    padding: 10px 5px;
+    border-radius: 5px;
     transition: background-color 0.3s ease;
+    display: inline-block;
 }
 
 a:hover {
-    background-color: #90b2b8;
+    background-color: #a9b7b9;
 }
 
 .busca input {
     margin-right: 20px;
+    width: 400px;
     padding: 8px;
     border-radius: 8px;
     border: 1px solid #ccc;
@@ -259,7 +264,11 @@ h3 {
     color: #4d4d4d;
 }
 
-/*CSS dos blocos de carros na pagina principal*/
+.veja-carros {
+    text-align: center;
+}
+
+/*CSS dos blocos de*/
 
 .content {
     display: flex;
@@ -352,8 +361,134 @@ h3 {
     padding-top: 10px;
     color: #eeeeee;
     text-decoration: none;
+    align-items: center;
 }
 
 .footer-bottom p {
     text-align: center;
+}
+
+/* Estilos para a página de detalhes do veículo */
+
+#body-exibir {
+    background-color: #e6e6e6da;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 752px;
+    margin: 70px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos do cabeçalho */
+.veiculo-titulo {
+    font-size: 28px;
+    margin: 0;
+    padding: 10px 0;
+    color: #333;
+}
+
+/* Estilos da imagem do veículo */
+.veiculo-imagem {
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.veiculo-imagem img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos das informações do veículo */
+.veiculo-info {
+    margin-bottom: 20px;
+}
+
+.veiculo-ano,
+.veiculo-preco {
+    margin: 0;
+    padding: 5px 0;
+    color: #666;
+}
+
+.car-price {
+    font-weight: bold;
+    color: #333;
+}
+
+.veiculo-descricao {
+    margin: 0;
+    width: 90%;
+    text-align: justify;
+    padding: 10px 0;
+}
+
+/* Estilos dos botões */
+.buttons-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn-alugar {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-alugar {
+    background-color: #009688;
+    margin-right: 10px;
+
+}
+
+.btn-alugar:hover {
+    background-color: #26a69a;
+}
+
+/* Estilos do formulário de aluguel */
+.aluguel-form {
+    display: none;
+    margin-top: 20px;
+}
+
+.aluguel-form label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.aluguel-form input[type="text"],
+.aluguel-form input[type="date"] {
+    display: block;
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.aluguel-form input[type="submit"] {
+    background-color: #009688;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.aluguel-form input[type="submit"]:hover {
+    background-color: #26a69a;
 }

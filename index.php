@@ -48,8 +48,9 @@ if (!isset($_SESSION)) {
                     24 horas por dia, 7 dias por semana.</p>
             </div>
         </div>
+
+        <div class="veja-carros" ><a href=""><h2><br><br>Veja os carros disponíveis clicando aqui!</a><br><br><br><br><br> </h2></div>
     </div>
-    <?php include('carros.php'); ?>
     <footer>
         <div class="footer-bottom">
             <a href="https://www.instagram.com/juuniorcs/" target="_blank">

@@ -1,5 +1,6 @@
 <?php
 require('conexao.php');
+include('templates/header.php');
 
 $select_veiculo = mysqli_query($mysqli, "SELECT * FROM veiculo ORDER BY cod_veiculo ASC");
 ?>
@@ -16,6 +17,7 @@ $select_veiculo = mysqli_query($mysqli, "SELECT * FROM veiculo ORDER BY cod_veic
 </head>
 
 <body>
+
     <div class="col-100 bloco-imagens-texto" id="bloco-imagens-texto">
         <div class="content">
             <?php
@@ -25,7 +27,7 @@ $select_veiculo = mysqli_query($mysqli, "SELECT * FROM veiculo ORDER BY cod_veic
                 $img_veiculo = $dados_veiculo['img_veiculo'];
                 $caminho_imagem = 'img/uploads/' . $img_veiculo;
 
-                if ($count % 2 === 0) {
+                if ($count % 3 === 0) {
                     // Abre uma nova linha a cada 2 veículos
                     echo '<div class="row">';
                 }
@@ -47,19 +49,19 @@ $select_veiculo = mysqli_query($mysqli, "SELECT * FROM veiculo ORDER BY cod_veic
                         </p>
                     </div>
                     <div class="botao-comprar">
-                        <a href="#" class="btn-comprar">Alugar</a>
+                        <a href="detalhe_veiculo.php?id=<?php echo $dados_veiculo['cod_veiculo']; ?>" class="btn-comprar">Saiba mais</a>
                     </div>
                 </div>
                 <?php
                 $count++;
-                if ($count % 2 === 0) {
+                if ($count % 3 === 0) {
                     // Fecha a linha a cada 2 veículos
                     echo '</div>';
                 }
             }
 
             // Verifica se há algum veículo faltando para fechar a última linha
-            if ($count % 2 !== 0) {
+            if ($count % 3 !== 0) {
                 // Exibe um bloco vazio para completar a linha
                 echo '<div class="col-6 empty-block"></div>';
                 // Fecha a linha

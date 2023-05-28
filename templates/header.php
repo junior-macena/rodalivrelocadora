@@ -55,7 +55,7 @@ if (!isset($_SESSION)) {
                     <ul>
                         <li class="nav-home"><a href="http://localhost/rodalivre2023/">Home</a></li>
                         <li class="nav-carros"><a href="http://localhost/rodalivre2023/carros.php">Carros</a></li>
-                        <li class="nav-reservas"><a href="http://localhost/rodalivre2023/minhasreservas.php">Minhas
+                        <li class="nav-reservas"><a href="http://localhost/rodalivre2023/minha_reserva.php">Minhas
                                 reservas</a></li>
                     </ul>
                 </div>
