@@ -15,10 +15,9 @@ include('protect.php');
     <?php require('templates/header.php'); ?>
 <body id="body-exibir" >
 
-    <div class="container">
+    <div class="container3">
         <?php
         require('conexao.php');
-
         // Verifica se o parâmetro "id" está presente na URL
         if (isset($_GET['id'])) {
             // Obtém o código do veículo da URL
@@ -51,15 +50,18 @@ include('protect.php');
                 echo "<button class='btn-alugar' id='btnAlugar'>Alugar</button>";
                 echo "</div>";
                 
+                // Obtém o CPF do usuário logado da sessão
+                $cpf_user = $_SESSION['cpf_user'];
 
                 // Formulário de aluguel
                 echo "<form class='aluguel-form' id='aluguelForm' action='alugar_carro.php?id=$cod_veiculo' method='POST'>";
-                echo "<label for='cpf_user'>CPF do usuário:</label>";
-                echo "<input type='text' name='cpf_user' id='cpf_user' required>";
-                echo "<label for='data_inicio'>Data de início:</label>";
-                echo "<input type='date' name='data_inicio' id='data_inicio' required>";
-                echo "<label for='data_fim'>Data de término:</label>";
+                echo "<label for='email_user'>E-mail do usuário:</label>";
+                echo "<input type='email' name='email_user' id='email_user' required>";
+                
+                echo "<label for='data_fim'>Data de término do aluguel:</label>";
                 echo "<input type='date' name='data_fim' id='data_fim' required>";
+                echo "<input type='hidden' name='cpf_user' value='$cpf_user'>"; // Campo oculto com o CPF do usuário
+
                 echo "<input type='submit' value='Alugar' class='btn-alugar' id='submitAlugar'>";
                 
                 echo "</form>";

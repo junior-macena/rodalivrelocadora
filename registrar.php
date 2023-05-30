@@ -61,6 +61,9 @@ include_once 'conexao.php';
     }
 
     ?>
+    <div class="bt-voltar"><button class="btn-voltar"><a href="index.php">Voltar</a></button></div>
+
+
     <form id="form_registro" name="form_registro" class="form_registro" method="post" action=" ">
 
         <div>
@@ -71,13 +74,13 @@ include_once 'conexao.php';
 
             <div>
                 <input type="text" name="nome_user" placeholder="Primeiro nome" required><br>
-                
+
                 <input type="number" name="cpf_user" placeholder="CPF" required><br>
 
                 <input type="email" name="email_user" placeholder="E-mail" required autofocus><br>
 
                 <input type="password" name="senha_user" placeholder="Crie uma senha" required><br>
-                
+
                 <input type="password" name="senha_user" placeholder="Confirme a senha" required><br><br>
 
                 <div><input type="submit" id="SendCadUser" name="SendCadUser" value="Cadastrar"></div>

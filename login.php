@@ -10,8 +10,12 @@
 </head>
 
 <body>
+
+<div class="bt-voltar" ><button class="btn-voltar"><a href="index.php">Voltar</a></button></div>
+
     <form id="form_login" name="form_login" class="form_login" method="post" action="valida_login.php">
 
+    
         <div>
             <h1>LOGIN</h1>
         </div>

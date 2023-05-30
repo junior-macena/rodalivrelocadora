@@ -46,15 +46,35 @@ body {
 .button-log {
     position: absolute;
     right: 80px;
-    top: 0;
+    top: 15px;
 }
 
 /* Estilos para o botão de logout */
+.nav-logout {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3px;
+    align-items: flex-end;
+}
+
+.nav-logout .user-info {
+    margin-bottom: 20px;
+}
+
+.nav-logout .logout-link {
+    margin-top: -12px;
+}
+
 .nav-logout a {
     color: #ffffff;
     text-decoration: none;
-    margin-right: 10px;
+    margin-right: -3px;
 }
+
+.nav-logout label {
+    color: rgb(0, 0, 0);
+}
+
 
 /* Estilos para os botões de login e registrar-se */
 .nav-login a,
@@ -109,7 +129,7 @@ ul {
 }
 
 li {
-    margin-right: 10px;
+    margin-right: 35px;
     font-size: 20px;
 }
 
@@ -117,14 +137,12 @@ a {
     text-decoration: none;
     color: #333;
     padding: 10px 5px;
-    border-radius: 5px;
+    border-radius: 40px;
     transition: background-color 0.3s ease;
-    display: inline-block;
+    display: contents;
 }
 
-a:hover {
-    background-color: #a9b7b9;
-}
+
 
 .busca input {
     margin-right: 20px;
@@ -268,62 +286,75 @@ h3 {
     text-align: center;
 }
 
-/*CSS dos blocos de*/
+/* CSS dos blocos de carros */
+
+.b-car {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
 
 .content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     margin-bottom: 20px;
 }
 
 .row {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     width: 100%;
 }
 
 .bloco-imagem {
     background-color: #ffffff;
-    border: 1px solid #ccc;
+    border: 1px solid #e0e0e0;
     border-radius: 5px;
     padding: 20px;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease-in-out;
-    flex: 0 0 calc(33.33% - 20px);
+    flex: 0 0 calc(33.33% - 10px);
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 .bloco-imagem:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
 }
 
 .bloco-imagem img {
     max-width: 100%;
     height: auto;
     margin-bottom: 20px;
+    border-radius: 5px;
+    object-fit: cover;
 }
 
 .bloco-imagem h3 {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 10px;
+    color: #333333;
 }
 
 .bloco-imagem h4 {
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 10px;
     color: #888888;
 }
 
 .preco {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bold;
     margin-bottom: 15px;
+    color: #007bff;
 }
 
 .botao-comprar {
@@ -335,7 +366,7 @@ h3 {
     background-color: #007bff;
     color: #ffffff;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 12px 24px;
     border-radius: 4px;
     transition: background-color 0.3s ease-in-out;
 }
@@ -344,7 +375,9 @@ h3 {
     background-color: #0056b3;
 }
 
-
+.empty-block {
+    flex: 0 0 calc(33.33% - 10px);
+}
 
 /*estilizando o footer*/
 .footer-bottom {
@@ -376,7 +409,7 @@ h3 {
     padding: 0;
 }
 
-.container {
+.container3 {
     max-width: 752px;
     margin: 70px auto;
     padding: 20px;
@@ -462,7 +495,7 @@ h3 {
 
 .aluguel-form label {
     display: block;
-    font-size: 16px;
+    font-size: 17px;
     margin-bottom: 5px;
     color: #666;
 }
@@ -491,4 +524,57 @@ h3 {
 
 .aluguel-form input[type="submit"]:hover {
     background-color: #26a69a;
+}
+
+/*css da pagina minha reserva*/
+
+.container2 {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+h1 {
+    margin-top: 0;
+    color: #333;
+}
+
+.car-details {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.car-details:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.car-details h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.car-details p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.car-image img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
+/* Estilos para a mensagem de carro não alugado */
+.empty-message {
+    text-align: center;
+    margin-top: 20px;
 }

@@ -16,7 +16,7 @@ $select_veiculo = mysqli_query($mysqli, "SELECT * FROM veiculo ORDER BY cod_veic
     <title>Carros</title>
 </head>
 
-<body>
+<body class="b-car" >
 
     <div class="col-100 bloco-imagens-texto" id="bloco-imagens-texto">
         <div class="content">
@@ -42,7 +42,7 @@ $select_veiculo = mysqli_query($mysqli, "SELECT * FROM veiculo ORDER BY cod_veic
                             <?php echo $dados_veiculo['marca']; ?>
                         </h4>
                         <p class="preco">
-                            <?php echo $dados_veiculo['preco_veiculo']; ?>
+                            <?php echo $dados_veiculo['preco_veiculo']; ?>/mes
                         </p>
                         <p>
                             <?php echo $dados_veiculo['descricao']; ?>

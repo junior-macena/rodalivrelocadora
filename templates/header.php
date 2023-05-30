@@ -27,7 +27,14 @@ if (!isset($_SESSION)) {
                 <div class="button-log">
                     <?php if (isset($_SESSION['email_user'])): ?>
                         <div class="nav-logout">
-                            <a href="http://localhost/rodalivre2023/logout.php">Logout</a>
+                            <div class="user-info">
+                                <label>
+                                    <?php echo "Olá, " . $_SESSION['nome_user']; ?>
+                                </label>
+                            </div>
+                            <div class="logout-link">
+                                <a href="http://localhost/rodalivre2023/logout.php">Sair</a>
+                            </div>
                         </div>
                     <?php else: ?>
                         <div class="nav-login">
