@@ -46,7 +46,7 @@ include('protect.php');
                 echo "<div class='veiculo-imagem'><img src='img/uploads/$img_veiculo' alt='Imagem do Veículo'></div>";
                 echo "<div class='veiculo-info'>";
                 echo "<p class='veiculo-ano'>Ano: $ano_veiculo</p>";
-                echo "<p class='veiculo-preco'>Preço: <span class='car-price'>R$ $preco_veiculo /mes</span></p>";
+                echo "<p class='veiculo-preco'>Preço: <span class='car-price'>R$$preco_veiculo /dia</span></p>";
                 echo "<p class='veiculo-descricao'>Descrição: $descricao</p>";
                 echo "</div>";
 
@@ -60,7 +60,7 @@ include('protect.php');
                 // Formulário de aluguel
                 echo "<form class='aluguel-form' id='aluguelForm' action='alugar_carro.php?id=$cod_veiculo' method='POST'>";
                 echo "<label for='email_user'>E-mail do usuário:</label>";
-                echo "<input type='email' name='email_user' id='email_user' required>";
+                echo "<input type='email' name='email_user' id='email_user' required placeholder='usuario@email.com'";
 
                 echo "<label for='data_fim'>Data de término do aluguel:</label>";
                 echo "<input type='date' name='data_fim' id='data_fim' required>";
@@ -75,7 +75,8 @@ include('protect.php');
                 echo "<input type='text' name='nome_cartao' id='nome_cartao' required>";
 
                 echo "<label for='data_validade'>Data de validade do cartão:</label>";
-                echo "<input type='text' name='data_validade' id='data_validade' required pattern='^(0[1-9]|1[0-2])\/?([0-9]{2})$' placeholder='MM/AA' maxlength='5'>";
+                echo "<input type='text' name='data_validade' id='data_validade' required placeholder='MM/AA' maxlength='5' oninput='formatarDataValidade(event)'>";
+
 
                 echo "<label for='codigo_seguranca'>Código de segurança do cartão:</label>";
                 echo "<input type='text' name='codigo_seguranca' id='codigo_seguranca' maxlength='3' required>";
@@ -84,7 +85,8 @@ include('protect.php');
                 echo "<input type='submit' value='Alugar' class='btn-alugar' id='submitAlugar'>";
 
 
-                echo "<h5>Isso é apenas uma simulação e não há processamento real do pagamento. Os dados fornecidos são apenas para fins de demonstração e não serão processados.</h5>";
+                echo "<h5>Isso é apenas uma simulação e não há processamento real do pagamento. 
+                Os dados fornecidos são apenas para fins de demonstração e não serão processados.</h5>";
 
                 echo "</form>";
             } else {
@@ -114,9 +116,25 @@ include('protect.php');
                 // Aplica a máscara ao campo de número do cartão
                 $('#num_cartao').inputmask('9999 9999 9999 9999');
             });
+            function formatarDataValidade(event) {
+                const input = event.target;
+                let valor = input.value.replace(/\D/g, '');
 
+                if (valor.length > 2) {
+                    valor = valor.replace(/(\d{2})(\d{2})/, '$1/$2');
+                }
+
+                input.value = valor;
+            }
         </script>
     </div>
+    <footer>
+        <div class="footer-bottom">
+            <a href="https://www.instagram.com/juuniorcs/" target="_blank">
+                <p>@juuniorcs - 2023</p>
+            </a>
+        </div>
+    </footer>
 </body>
 
 </html>

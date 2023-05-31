@@ -81,7 +81,10 @@ include_once 'conexao.php';
 
                 <input type="password" name="senha_user" placeholder="Crie uma senha" required><br>
 
-                <input type="password" name="senha_user" placeholder="Confirme a senha" required><br><br>
+                <input type="password" name="confirma_senha" id="confirma_senha" placeholder="Confirme a senha"
+                    required>
+                <span id="senha_error" class="error" style="color: red;"></span>
+
 
                 <div><input type="submit" id="SendCadUser" name="SendCadUser" value="Cadastrar"></div>
                 <p class="tem-cadastro">
@@ -97,7 +100,22 @@ include_once 'conexao.php';
         </div>
 
     </form>
+    <script>
+        //verifica se as senhas estao iguais
+        const form = document.getElementById('form_registro');
+        const senhaInput = document.querySelector('input[name="senha_user"]');
+        const confirmaSenhaInput = document.querySelector('input[name="confirma_senha"]');
+        const senhaError = document.getElementById('senha_error');
 
+        form.addEventListener('submit', (event) => {
+            if (confirmaSenhaInput.value !== senhaInput.value) {
+                senhaError.textContent = 'A confirmação de senha precisa ser igual senha informada.';
+                event.preventDefault(); // Cancela o envio do formulário
+            } else {
+                senhaError.textContent = '';
+            }
+        });
+    </script>
 </body>
 
 </html>

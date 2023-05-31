@@ -74,16 +74,16 @@ if (mysqli_num_rows($result) > 0) {
                     <div class="car-image">
                         <img src="img/uploads/<?php echo $img_veiculo; ?>" alt="Imagem do Veículo">
                     </div>
-                    <p>Ano:
+                    <p><strong>Ano:</strong>
                         <?php echo $ano_veiculo; ?>
                     </p>
-                    <p>Preço: R$
-                        <?php echo $preco_veiculo; ?> / mês
+                    <p><strong>Preço do aluguel:</strong> R$
+                        <?php echo $preco_veiculo; ?> /dia
                     </p>
-                    <p>Registro do Aluguel:
+                    <p><strong>Registro do Aluguel:</strong>
                         <?php echo $registro_aluguel; ?>
                     </p>
-                    <p>Tempo Restante:
+                    <p style="color:#163dff "><strong>Tempo Restante:</strong>
                         <?php echo $dias_restantes; ?> dia(s)
                     </p>
                 </div>
@@ -91,7 +91,13 @@ if (mysqli_num_rows($result) > 0) {
             <?php } ?>
 
         </div>
-
+        <footer>
+            <div class="footer-bottom">
+                <a href="https://www.instagram.com/juuniorcs/" target="_blank">
+                    <p>@juuniorcs - 2023</p>
+                </a>
+            </div>
+        </footer>
     </body>
 
     </html>

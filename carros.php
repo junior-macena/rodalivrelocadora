@@ -16,7 +16,7 @@ $select_veiculo = mysqli_query($mysqli, "SELECT * FROM veiculo ORDER BY cod_veic
     <title>Carros</title>
 </head>
 
-<body class="b-car" >
+<body class="b-car">
 
     <div class="col-100 bloco-imagens-texto" id="bloco-imagens-texto">
         <div class="content">
@@ -42,14 +42,16 @@ $select_veiculo = mysqli_query($mysqli, "SELECT * FROM veiculo ORDER BY cod_veic
                             <?php echo $dados_veiculo['marca']; ?>
                         </h4>
                         <p class="preco">
-                            <?php echo $dados_veiculo['preco_veiculo']; ?>/mes
+                            R$
+                            <?php echo $dados_veiculo['preco_veiculo']; ?> /dia
                         </p>
                         <p>
                             <?php echo $dados_veiculo['descricao']; ?>
                         </p>
                     </div>
                     <div class="botao-comprar">
-                        <a href="detalhe_veiculo.php?id=<?php echo $dados_veiculo['cod_veiculo']; ?>" class="btn-comprar">Saiba mais</a>
+                        <a href="detalhe_veiculo.php?id=<?php echo $dados_veiculo['cod_veiculo']; ?>"
+                            class="btn-comprar">Saiba mais</a>
                     </div>
                 </div>
                 <?php
@@ -76,7 +78,13 @@ $select_veiculo = mysqli_query($mysqli, "SELECT * FROM veiculo ORDER BY cod_veic
         </div>
     </div>
 
-
+    <footer>
+        <div class="footer-bottom">
+            <a href="https://www.instagram.com/juuniorcs/" target="_blank">
+                <p>@juuniorcs - 2023</p>
+            </a>
+        </div>
+    </footer>
 </body>
 
 </html>

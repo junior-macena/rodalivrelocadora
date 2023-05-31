@@ -74,6 +74,7 @@ if (!isset($_SESSION)) {
     </header>
 
     <script type="text/javascript" src="http://localhost/rodalivre2023/js/main.js"></script>
+
 </body>
 
 </html>
