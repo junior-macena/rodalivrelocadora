@@ -402,44 +402,46 @@ h3 {
 }
 
 /* Estilos para a página de detalhes do veículo */
-
 #body-exibir {
-    background-color: #e6e6e6da;
+    background-color: #f5f5f5;
     margin: 0;
     padding: 0;
 }
 
 .container3 {
-    max-width: 752px;
+    max-width: 800px;
     margin: 70px auto;
-    padding: 20px;
+    padding: 30px;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 /* Estilos do cabeçalho */
 .veiculo-titulo {
-    font-size: 28px;
+    font-size: 36px;
     margin: 0;
     padding: 10px 0;
     color: #333;
+    text-align: center;
 }
 
 /* Estilos da imagem do veículo */
 .veiculo-imagem {
     text-align: center;
-    padding: 30px;
-    margin-bottom: 20px;
+    padding: 30px 0;
+    margin-bottom: 30px;
 }
 
 .veiculo-imagem img {
     max-width: 100%;
     height: auto;
+    border-radius: 10px;
 }
 
 /* Estilos das informações do veículo */
 .veiculo-info {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .veiculo-ano,
@@ -447,10 +449,10 @@ h3 {
     margin: 0;
     padding: 5px 0;
     color: #666;
+    font-weight: bold;
 }
 
 .car-price {
-    font-weight: bold;
     color: #333;
 }
 
@@ -458,72 +460,87 @@ h3 {
     margin: 0;
     width: 90%;
     text-align: justify;
-    padding: 10px 0;
+    padding: 20px 0;
+    color: #555;
+    line-height: 1.6;
 }
 
 /* Estilos dos botões */
 .buttons-container {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .btn-alugar {
-    padding: 10px 20px;
+    padding: 15px 40px;
     border: none;
     border-radius: 4px;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: bold;
     color: #fff;
+    background-color: #009688;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.btn-alugar {
-    background-color: #009688;
-    margin-right: 10px;
-
-}
-
 .btn-alugar:hover {
-    background-color: #26a69a;
+    background-color: #008577;
 }
 
 /* Estilos do formulário de aluguel */
 .aluguel-form {
     display: none;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .aluguel-form label {
     display: block;
-    font-size: 17px;
-    margin-bottom: 5px;
-    color: #666;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
 }
 
 .aluguel-form input[type="text"],
+.aluguel-form input[type="email"],
 .aluguel-form input[type="date"] {
     display: block;
     width: 50%;
-    padding: 10px;
+    padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
+#codigo_seguranca{
+    width: 10%;
+}
+
+#data_validade{
+    width: 20%;
+}
 .aluguel-form input[type="submit"] {
     background-color: #009688;
     color: #fff;
     border: none;
     border-radius: 4px;
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .aluguel-form input[type="submit"]:hover {
-    background-color: #26a69a;
+    background-color: #008577;
+}
+
+h5 {
+    margin-top: 20px;
+    color: #777;
+    font-size: 14px;
+    text-align: center;
 }
 
 /*css da pagina minha reserva*/

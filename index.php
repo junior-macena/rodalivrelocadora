@@ -49,7 +49,7 @@ if (!isset($_SESSION)) {
             </div>
         </div>
 
-        <div class="veja-carros" ><a href=""><h2><br><br>Veja os carros disponíveis clicando aqui!</a><br><br><br><br><br> </h2></div>
+        <div class="veja-carros" ><a href="carros.php"><h2><br><br>Veja os carros disponíveis clicando aqui!</a><br><br><br><br><br> </h2></div>
     </div>
     <footer>
         <div class="footer-bottom">
