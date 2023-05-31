@@ -28,6 +28,16 @@ include_once 'conexao.php';
         $email_user = trim($_POST['email_user']);
         $senha_user = trim($_POST['senha_user']);
 
+        // Remover caracteres não numéricos do CPF
+        $cpf_user = preg_replace('/\D/', '', $cpf_user);
+
+        // Verificar se o CPF tem 11 dígitos
+        if (strlen($cpf_user) !== 11) {
+            echo "<p style='color: #f00;'>CPF inválido!</p>";
+            return;
+        }
+
+
         // Verificar se o CPF já está cadastrado no banco de dados
         $query_verifica_cpf = "SELECT COUNT(*) AS total FROM usuario WHERE cpf_user = ?";
         $verifica_cpf = $mysqli->prepare($query_verifica_cpf);
@@ -38,6 +48,7 @@ include_once 'conexao.php';
         $verifica_cpf->close();
 
         if ($total > 0) {
+
             echo "<p style='color: #f00;'>CPF já cadastrado!</p>";
         } else {
             // O CPF não está cadastrado, prosseguir com o cadastro do usuário
@@ -75,7 +86,7 @@ include_once 'conexao.php';
             <div>
                 <input type="text" name="nome_user" placeholder="Primeiro nome" required><br>
 
-                <input type="number" name="cpf_user" placeholder="CPF" required><br>
+                <input type="text" name="cpf_user" placeholder="CPF" required maxlength="14"><br>
 
                 <input type="email" name="email_user" placeholder="E-mail" required autofocus><br>
 
@@ -115,6 +126,28 @@ include_once 'conexao.php';
                 senhaError.textContent = '';
             }
         });
+
+        // Seleciona o campo de CPF
+        const cpfInput = document.querySelector('input[name="cpf_user"]');
+
+        // Adiciona o evento de digitação
+        cpfInput.addEventListener('input', formatarCPF);
+
+        // Função para formatar o CPF
+        function formatarCPF() {
+            let cpf = cpfInput.value;
+
+            // Remove qualquer caractere não numérico
+            cpf = cpf.replace(/\D/g, '');
+
+            // Aplica a formatação do CPF
+            cpf = cpf.replace(/(\d{3})(\d)/, '$1.$2');
+            cpf = cpf.replace(/(\d{3})(\d)/, '$1.$2');
+            cpf = cpf.replace(/(\d{3})(\d{1,2})$/, '$1-$2');
+
+            // Atualiza o valor do campo de CPF
+            cpfInput.value = cpf;
+        }
     </script>
 </body>
 
