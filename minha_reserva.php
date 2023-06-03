@@ -105,6 +105,7 @@ if (mysqli_num_rows($result) > 0) {
     <?php
 } else {
     // O usuário não possui carros alugados
+    require("templates/header.php");
     echo "Você não possui nenhum carro alugado no momento.";
 }
 ?>

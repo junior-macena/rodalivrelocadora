@@ -53,7 +53,7 @@ if (!isset($_SESSION)) {
     </div>
     <footer>
         <div class="footer-bottom">
-            <a href="https://www.instagram.com/juuniorcs/" target="_blank">
+            <a href="sobre.php">
                 <p>@juuniorcs - 2023</p>
             </a>
         </div>

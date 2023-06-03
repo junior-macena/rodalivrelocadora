@@ -1,4 +1,4 @@
-<?php require('index-adm.php'); ?>
+<?php require('index-admin.php'); ?>
 <html class="html_cad_veiculo">
 
 <body>

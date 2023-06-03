@@ -12,6 +12,36 @@ html {
 
 }
 
+/* Estilos para o botão de logout */
+.nav-logout {
+	display: flex;
+	flex-direction: column;
+	margin-top: 3px;
+	align-items: flex-end;
+}
+
+.nav-logout .user-info {
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+.nav-logout .logout-link {
+	margin-top: -12px;
+}
+
+.nav-logout a {
+	color: #ff0000;
+	text-decoration: none;
+	margin-right: -2px;
+	font-size: 14px;
+}
+
+.nav-logout label {
+	color: rgb(90 90 90);
+	font-size: 13px;
+}
+
+
 /* CSS ADMIN */
 /* MENU */
 

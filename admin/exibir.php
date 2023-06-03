@@ -1,7 +1,7 @@
 <?php
 require('protectadmin.php');
 require('../conexao.php');
-require('index-adm.php');
+require('index-admin.php');
 
 $select_veiculo = mysqli_query($mysqli, "SELECT * FROM veiculo ORDER BY cod_veiculo ASC");
 

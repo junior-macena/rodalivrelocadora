@@ -29,12 +29,19 @@
 
         <div class="barra_topo_n1">
 
-            <img src="http://localhost/rodalivre2023/img/logo.png">
+            <img src="http://localhost/rodalivre2023/img/logo.png" onclick="window.location.href='index-admin.php'"
+                style="cursor: pointer;">
 
-            <label>
-                <?php echo "Seja bem-vindo, " . $_SESSION['nome_user']; ?>
-            </label>
-
+            <div class="nav-logout">
+                <div class="user-info">
+                    <label>
+                        <?php echo "Olá, " . $_SESSION['nome_user']; ?>
+                    </label>
+                </div>
+                <div class="logout-link">
+                    <a href="http://localhost/rodalivre2023/logout.php">Sair</a>
+                </div>
+            </div>
         </div>
 
         <div class="barra_topo_n2">
@@ -52,8 +59,8 @@
 
                     </li>
 
-                    <li class="adm-sair" ><a href="http://localhost/rodalivre2023/logout.php">SAIR</a></li>
-
+                    <li class="adm-sair"><a href="http://localhost/rodalivre2023/index.php">PAGINA PRINCIPAL DO SITE</a>
+                    </li>
                 </ul>
 
             </nav>
@@ -61,6 +68,10 @@
         </div>
 
     </div>
+
+    <h1 style="text-align: center;">PAGINA DO ADMINISTRADOR</h1>
+
+    <?php ?>
 </body>
 
 </html>

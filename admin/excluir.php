@@ -12,7 +12,7 @@ if (mysqli_query($mysqli, $delete_veiculo)) {
     echo "<script> window.location.href='http://localhost/rodalivre2023/admin/exibir.php'; </script>";
 } else {
     echo "<script> alert('ERRO: NÃO FOI POSSÍVEL EXCLUIR O VEÍCULO.'); </script>";
-    echo "<script> window.location.href='http://localhost/rodalivre2023/admin/index-adm.php'; </script>";
+    echo "<script> window.location.href='http://localhost/rodalivre2023/admin/index-admin.php'; </script>";
     mysqli_close($mysqli);
 }
 ?>
