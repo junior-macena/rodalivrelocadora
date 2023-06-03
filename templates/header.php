@@ -66,6 +66,22 @@ if (!isset($_SESSION)) {
                                 reservas</a></li>
                     </ul>
                 </div>
+
+                <nav>
+
+                    <ul class="menu_admin">
+
+                        <li><a href="#">+</a>
+
+                            <ul>
+                                <li><a href="admin/index-admin.php">Acesso administrador</a></li>
+                                <li><a href="./sobre.php">Sobre</a></li>
+                            </ul>
+
+                        </li>
+                    </ul>
+
+                </nav>
                 <div class="busca">
                     <input id="pesquisarInput" placeholder="Pesquisar" type="text">
                 </div>

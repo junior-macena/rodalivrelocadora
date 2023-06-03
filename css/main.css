@@ -161,6 +161,64 @@ a {
 }
 
 
+.menu_admin {
+
+	list-style: none;
+	float: left;
+	width: 100%;
+
+}
+.menu_admin li {
+
+	position: relative;
+	float: left;
+	font-size: 1.2rem;
+	width: 10%;
+	text-align: center;
+
+
+}
+
+.menu_admin li a {
+
+	color: #333;
+	text-decoration: none;
+	padding: 1rem 1rem;
+	display: block;
+
+}
+
+.menu_admin li a:hover {
+
+	color: #333;
+	font-weight: 550;
+
+}
+
+.menu_admin li ul {
+
+	position: absolute;
+	top: 37px;
+	left: 0;
+	background: #eeeeee;
+    border: 1px solid #a0a0a0;
+	display: none;
+
+}
+
+.menu_admin li:hover ul,
+.menu li.over ul {
+
+	display: block;
+    z-index: 1;
+
+}
+.menu_admin li ul li {
+
+	display: block;
+	width: 120px;
+	text-align: left;
+}
 
 /* menu-principal */
 
