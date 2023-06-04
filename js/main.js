@@ -23,3 +23,4 @@ function formatarDecimal(input) {
 
   input.value = valorFormatado;
 }
+

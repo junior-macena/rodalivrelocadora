@@ -33,7 +33,7 @@
         }
 
         .signature {
-            margin-top: 40px;
+            margin-top: 100px;
             font-size: 14px;
             color: #777;
             text-align: right;
@@ -49,9 +49,9 @@
         }
 
         .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
+            max-width: 700px;
+            margin: 100px auto;
+            padding: 80px;
             background-color: #fff;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
