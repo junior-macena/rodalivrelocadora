@@ -86,6 +86,8 @@ if (mysqli_num_rows($result) > 0) {
                     <p style="color:#163dff "><strong>Tempo Restante:</strong>
                         <?php echo $dias_restantes; ?> dia(s)
                     </p>
+
+                    <a class="cancel-button" href="cancelar_aluguel.php?registro=<?php echo $registro_aluguel; ?>">Cancelar Aluguel</a>
                 </div>
 
             <?php } ?>

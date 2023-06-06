@@ -49,7 +49,7 @@ if (mysqli_num_rows($select_veiculo) > 0) {
 </form>
 
 
-<script type="text/javascript" src="./js/main.js"></script>
+<script type="text/javascript" src="../js/main.js"></script>
 </body>
 
 </html>

@@ -1,9 +1,9 @@
 <?php
 //conexao com o Banco de dados
-$host = 'locahost';
-$usuario = 'root';
-$senha = '';
-$database = 'locadoradb';
+$host = 'sql107.infinityfree.com';
+$usuario = 'if0_34368373';
+$senha = 'C62JwRXo4kJm';
+$database = 'if0_34368373_locadoradb';
 
 date_default_timezone_set("America/Manaus");
 
@@ -14,4 +14,5 @@ if ($mysqli->error) {
 }
 
 
+mysqli_set_charset($mysqli, "utf8");
 ?>

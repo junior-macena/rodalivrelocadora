@@ -29,7 +29,7 @@
 
         <div class="barra_topo_n1">
 
-            <img src="./img/logo.png" onclick="window.location.href='index-admin.php'"
+            <img src="../img/logo.png" onclick="window.location.href='index-admin.php'"
                 style="cursor: pointer;">
 
             <div class="nav-logout">
@@ -39,7 +39,7 @@
                     </label>
                 </div>
                 <div class="logout-link">
-                    <a href="./logout.php">Sair</a>
+                    <a href="../logout.php">Sair</a>
                 </div>
             </div>
         </div>
@@ -59,7 +59,7 @@
 
                     </li>
 
-                    <li class="adm-sair"><a href="./index.php">PAGINA PRINCIPAL DO SITE</a>
+                    <li class="adm-sair"><a href="../index.php">PAGINA PRINCIPAL DO SITE</a>
                     </li>
                 </ul>
 

@@ -2,7 +2,8 @@
 <html class="html_cad_veiculo">
 
 <body>
-    <form id="form_cadastrar" name="form_cadastrar" class="form_cadastrar" method="post" action="salvar.php" enctype="multipart/form-data">
+    <form id="form_cadastrar" name="form_cadastrar" class="form_cadastrar" method="post" action="salvar.php"
+        enctype="multipart/form-data">
 
         <div>
             <h1>CADASTRAR CARRO</h1><br><br><br>
@@ -12,7 +13,8 @@
 
             <div>
                 <div class="label"><label>Ano do veículo</label> </div>
-                <div><input type="number" id="ano_veiculo" name="ano_veiculo" min="1900" max="2099" step="1" required placeholder="Ano"><br> </div><br>
+                <div><input type="number" id="ano_veiculo" name="ano_veiculo" min="1900" max="2099" step="1" required
+                        placeholder="Ano"><br> </div><br>
 
                 <div class="label"><label>Descrição do veículo</label></div><br>
                 <textarea name="descricao" id="descricao" cols="30" rows="10" required></textarea><br><br>
@@ -24,7 +26,8 @@
                 <div><input type="text" name="modelo" id="modelo" required placeholder="Modelo"></div><br><br>
 
                 <div class="label"><label>Preço</label></div>
-                <div>R$<input type="text" name="preco_veiculo" id="preco_veiculo" required placeholder="Preço" oninput="formatarDecimal(this)"></div><br><br>
+                <div>R$<input type="text" name="preco_veiculo" id="preco_veiculo" required placeholder="Preço"
+                        oninput="formatarDecimal(this)"></div><br><br>
 
                 <div class="label"><label>Imagem do veículo</label></div>
                 <div><input type="file" name="img_veiculo" id="img_veiculo"></div><br><br>
@@ -35,7 +38,7 @@
             </div>
         </div>
     </form>
-    <script type="text/javascript" src="./js/main.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
 </body>
 
 </html>
