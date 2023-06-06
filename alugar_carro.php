@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if ($result) {
             // A inserção foi bem-sucedida
             echo "<script> alert ('Carro alugado com sucesso!');</script>";
-            echo "<script> window.location.href='https://rodalivrelocadora-production.up.railway.app/minha_reserva.php';</script>";
+            echo "<script> window.location.href='minha_reserva.php';</script>";
         } else {
             // Ocorreu um erro durante a inserção
             echo "Erro ao alugar o carro. Por favor, tente novamente.";
@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } else {
         // E-mail inválido, exibir mensagem de erro
         echo "<script> alert ('E-mail inválido. Por favor, verifique o e-mail digitado.');</script>";
-        echo "<script> window.location.href='https://rodalivrelocadora-production.up.railway.app/detalhe_veiculo.php?id=$cod_veiculo';</script>";
+        echo "<script> window.location.href='detalhe_veiculo.php?id=$cod_veiculo';</script>";
     }
 } else {
     // O formulário não foi enviado corretamente

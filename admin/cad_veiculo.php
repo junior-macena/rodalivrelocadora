@@ -35,7 +35,7 @@
             </div>
         </div>
     </form>
-    <script type="text/javascript" src="https://rodalivrelocadora-production.up.railway.app/js/main.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
 </body>
 
 </html>

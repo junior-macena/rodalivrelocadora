@@ -9,7 +9,7 @@ if (mysqli_num_rows($select_veiculo) > 0) {
     $dados_veiculo = mysqli_fetch_assoc($select_veiculo);
 } else {
     echo "<script> alert('NÃO EXISTEM VEÍCULOS CADASTRADOS!'); </script>";
-    echo "<script> window.location.href='https://rodalivrelocadora-production.up.railway.app/admin/cad_veiculo.php'; </script>";
+    echo "<script> window.location.href='cad_veiculo.php'; </script>";
 }
 
 ?>

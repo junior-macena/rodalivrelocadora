@@ -9,10 +9,10 @@ $delete_veiculo = "DELETE FROM veiculo WHERE cod_veiculo = $cod_veiculo";
 if (mysqli_query($mysqli, $delete_veiculo)) {
     mysqli_close($mysqli);
     echo "<script> alert('VEÍCULO EXCLUÍDO COM SUCESSO!'); </script>";
-    echo "<script> window.location.href='https://rodalivrelocadora-production.up.railway.app/admin/exibir.php'; </script>";
+    echo "<script> window.location.href='exibir.php'; </script>";
 } else {
     echo "<script> alert('ERRO: NÃO FOI POSSÍVEL EXCLUIR O VEÍCULO.'); </script>";
-    echo "<script> window.location.href='https://rodalivrelocadora-production.up.railway.app/admin/index-admin.php'; </script>";
+    echo "<script> window.location.href='index-admin.php'; </script>";
     mysqli_close($mysqli);
 }
 ?>

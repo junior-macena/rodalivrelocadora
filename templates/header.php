@@ -11,7 +11,7 @@ if (!isset($_SESSION)) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="https://rodalivrelocadora-production.up.railway.app/css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
     <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Roda Livre</title>
@@ -50,7 +50,7 @@ if (!isset($_SESSION)) {
                 <ul>
                     <li>
                         <a href="https://www.instagram.com/juuniorcs/" target="_blank">
-                            <img src="https://rodalivrelocadora-production.up.railway.app/img/instagram.png" alt="Instagram">
+                            <img src="./img/instagram.png" alt="Instagram">
                         </a>
                     </li>
                 </ul>
@@ -89,7 +89,7 @@ if (!isset($_SESSION)) {
         </main>
     </header>
 
-    <script type="text/javascript" src="http://rodalivrelocadora-production.up.railway.app/js/main.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
 
 </body>
 
