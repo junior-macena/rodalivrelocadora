@@ -61,7 +61,7 @@ if (!isset($_SESSION)) {
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script type="text/javascript" src="http://localhost/rodalivre2023/js/main.js"></script>
+    <script type="text/javascript" src="https://rodalivrelocadora-production.up.railway.app/js/main.js"></script>
 </body>
 
 </html>
