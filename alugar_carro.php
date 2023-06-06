@@ -39,3 +39,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     echo "Ocorreu um erro no envio do formulário de aluguel.";
 }
 ?>
+

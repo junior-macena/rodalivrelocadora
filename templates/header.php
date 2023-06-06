@@ -21,7 +21,7 @@ if (!isset($_SESSION)) {
     <header class="menu-principal">
         <div class="header-1">
             <div class="logo">
-                <img src="http://localhost/rodalivre2023/img/logo.png" alt="Roda Livre">
+                <img src="./img/logo.png" alt="Roda Livre">
             </div>
             <div class="nav-buttons">
                 <div class="button-log">
@@ -33,15 +33,15 @@ if (!isset($_SESSION)) {
                                 </label>
                             </div>
                             <div class="logout-link">
-                                <a href="http://localhost/rodalivre2023/logout.php">Sair</a>
+                                <a href="./logout.php">Sair</a>
                             </div>
                         </div>
                     <?php else: ?>
                         <div class="nav-login">
-                            <a href="http://localhost/rodalivre2023/login.php">Login</a>
+                            <a href="./login.php">Login</a>
                         </div>
                         <div class="nav-registrar">
-                            <a href="http://localhost/rodalivre2023/registrar.php">Registrar-se</a>
+                            <a href="./registrar.php">Registrar-se</a>
                         </div>
                     <?php endif; ?>
                 </div>
@@ -60,9 +60,9 @@ if (!isset($_SESSION)) {
             <div class="header-2">
                 <div class="menu">
                     <ul>
-                        <li class="nav-home"><a href="http://localhost/rodalivre2023/">Home</a></li>
-                        <li class="nav-carros"><a href="http://localhost/rodalivre2023/carros.php">Carros</a></li>
-                        <li class="nav-reservas"><a href="http://localhost/rodalivre2023/minha_reserva.php">Minhas
+                        <li class="nav-home"><a href="./">Home</a></li>
+                        <li class="nav-carros"><a href="./carros.php">Carros</a></li>
+                        <li class="nav-reservas"><a href="./minha_reserva.php">Minhas
                                 reservas</a></li>
                     </ul>
                 </div>

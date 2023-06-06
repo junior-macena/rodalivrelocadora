@@ -130,8 +130,8 @@ include('protect.php');
     </div>
     <footer>
         <div class="footer-bottom">
-            <a href="https://www.instagram.com/juuniorcs/" target="_blank">
-                <p>@juuniorcs - 2023</p>
+            <a href="sobre.php">
+                <p>	Copyright &#169;  Juuniorcs <br> Todos os direitos reservados</p>
             </a>
         </div>
     </footer>

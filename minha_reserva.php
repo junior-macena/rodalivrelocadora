@@ -92,12 +92,12 @@ if (mysqli_num_rows($result) > 0) {
 
         </div>
         <footer>
-            <div class="footer-bottom">
-                <a href="https://www.instagram.com/juuniorcs/" target="_blank">
-                    <p>@juuniorcs - 2023</p>
-                </a>
-            </div>
-        </footer>
+        <div class="footer-bottom">
+            <a href="sobre.php">
+                <p>	Copyright &#169;  Juuniorcs <br> Todos os direitos reservados</p>
+            </a>
+        </div>
+    </footer>
     </body>
 
     </html>
