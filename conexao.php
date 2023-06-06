@@ -1,6 +1,6 @@
 <?php
 //conexao com o Banco de dados
-	$host = 'localhost';
+	$host = '127.0.0.1';
 	$usuario = 'root';
 	$senha = '';
 	$database = 'locadoradb';

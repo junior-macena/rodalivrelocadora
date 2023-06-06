@@ -23,10 +23,10 @@ if (isset($_POST['cod_veiculo'])) {
         move_uploaded_file($imagem_temp, $destino);
 
         echo "<script> alert ('VEÍCULO ATUALIZADO COM SUCESSO!');</script>";
-        echo "<script> window.location.href='http://localhost/rodalivre2023/admin/exibir.php';</script>";
+        echo "<script> window.location.href='https://rodalivrelocadora-production.up.railway.app/admin/exibir.php';</script>";
     } else {
         echo "<script> alert ('ERRO: NÃO FOI POSSÍVEL ATUALIZAR O VEÍCULO.');</script>";
-        echo "<script> window.location.href='http://localhost/rodalivre2023/admin/cad_veiculo.php';</script>";
+        echo "<script> window.location.href='https://rodalivrelocadora-production.up.railway.app/admin/cad_veiculo.php';</script>";
         mysqli_close($mysqli);
     }
 } else if (isset($_POST['marca'])) {
@@ -49,10 +49,10 @@ if (isset($_POST['cod_veiculo'])) {
         move_uploaded_file($imagem_temp, $destino);
 
         echo "<script> alert ('VEÍCULO CADASTRADO COM SUCESSO!');</script>";
-        echo "<script> window.location.href='http://localhost/rodalivre2023/admin/exibir.php';</script>";
+        echo "<script> window.location.href='https://rodalivrelocadora-production.up.railway.app/admin/exibir.php';</script>";
     } else {
         echo "<script> alert ('ERRO: NÃO FOI POSSÍVEL CADASTRAR O VEÍCULO.');</script>";
-        echo "<script> window.location.href='http://localhost/rodalivre2023/admin/cad_veiculo.php';</script>";
+        echo "<script> window.location.href='https://rodalivrelocadora-production.up.railway.app/admin/cad_veiculo.php';</script>";
         mysqli_close($mysqli);
     }
 }

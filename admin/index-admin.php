@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina ADM </title>
     <!-- ARQUIVO DE ESTILOS DO PORTAL -->
-    <link rel="stylesheet" type="text/css" href="http://localhost/rodalivre2023/admin/admin.css">
+    <link rel="stylesheet" type="text/css" href="https://rodalivrelocadora-production.up.railway.app/admin/admin.css">
     <script>
 
         function confirmar_exclusao(cod_veiculo) {
@@ -29,7 +29,7 @@
 
         <div class="barra_topo_n1">
 
-            <img src="http://localhost/rodalivre2023/img/logo.png" onclick="window.location.href='index-admin.php'"
+            <img src="https://rodalivrelocadora-production.up.railway.app/img/logo.png" onclick="window.location.href='index-admin.php'"
                 style="cursor: pointer;">
 
             <div class="nav-logout">
@@ -39,7 +39,7 @@
                     </label>
                 </div>
                 <div class="logout-link">
-                    <a href="http://localhost/rodalivre2023/logout.php">Sair</a>
+                    <a href="https://rodalivrelocadora-production.up.railway.app/logout.php">Sair</a>
                 </div>
             </div>
         </div>
@@ -53,13 +53,13 @@
                     <li><a href="#">CARROS</a>
 
                         <ul>
-                            <li><a href="http://localhost/rodalivre2023/admin/cad_veiculo.php">Cadastrar</a></li>
-                            <li><a href="http://localhost/rodalivre2023/admin/exibir.php">Exibir</a></li>
+                        <li><a href="https://rodalivrelocadora-production.up.railway.app/admin/cad_veiculo.php">Cadastrar</a></li>
+                            <li><a href="https://rodalivrelocadora-production.up.railway.app/admin/exibir.php">Exibir</a></li>
                         </ul>
 
                     </li>
 
-                    <li class="adm-sair"><a href="http://localhost/rodalivre2023/index.php">PAGINA PRINCIPAL DO SITE</a>
+                    <li class="adm-sair"><a href="https://rodalivrelocadora-production.up.railway.app/index.php">PAGINA PRINCIPAL DO SITE</a>
                     </li>
                 </ul>
 
